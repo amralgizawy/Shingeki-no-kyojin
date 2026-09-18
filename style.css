@@ -1,0 +1,132 @@
+:root{
+    --orange: #e65f26;
+    --light-color: #d7e3ee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --black: #020202;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .1rem solid var(--black);
+}
+
+*{
+    background-color: var(--light-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.header{
+    background: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.header .logo{
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+    background-color: white;
+}
+
+span{
+    font-family:'Tsukushi Mincho', sans-serif;
+    font-size: 1.5rem;
+    color: var(--black);
+    background-color: white;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.header .navbar a{
+    outline: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    background-color: white;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.header .navbar a:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--orange);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: rgb(47, 45, 45);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.footer p{
+    color: var(--light-color);
+    background-color: rgb(47, 45, 45);
+    font-family: 'Tsukushi Mincho', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
