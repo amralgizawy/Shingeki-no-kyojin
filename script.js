@@ -4,5 +4,5 @@ const Btn = document.getElementById('Btn');
 
 Btn.addEventListener('click', () => {
     Audio.play();
-    Cover.style.display = 'none';
+    Cover.classList.add('hide-cover');
 });
