@@ -21,6 +21,15 @@
     transition: all 0.2s linear;
 }
 
+span{
+    font-family:'Tsukushi Mincho', sans-serif;
+    font-size: 1.5rem;
+    color: var(--black);
+    background-color: var(--light-color);
+    white-space: nowrap;
+    flex: 1;
+}
+
 .header{
     background: white;
     display: flex;
@@ -37,14 +46,12 @@
     background-color: white;
 }
 
-span{
-    font-family:'Tsukushi Mincho', sans-serif;
+.header span{
     font-size: 1.5rem;
     color: var(--black);
     background-color: white;
-    white-space: nowrap;
-    flex: 1;
 }
+
 .header .navbar{
     display: flex;
     align-items: center;
@@ -145,16 +152,18 @@ span{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    border: 3px solid #9a340f;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
 }
 
 .story .story-content{
     position: relative;
     width: 100%;
-    height: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .story .story-content h2{
@@ -162,8 +171,19 @@ span{
     align-items: center;
     justify-content: center;
     font-family: 'Tsukushi Mincho', sans-serif;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
+.story .story-content p{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+.story .story-content p span{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--orange);
+}
 
 
 
