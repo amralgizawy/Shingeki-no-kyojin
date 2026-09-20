@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 :root{
     --orange: #e65f26;
     --light-color: #d7e3ee;
@@ -6,6 +7,24 @@
     --border: .2rem solid rgba(0,0,0,.1);
     --outline: .1rem solid rgba(0,0,0,.1);
     --outline-hover: .1rem solid var(--black);
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7;
+    border-radius: .5rem;
+    border:.2rem solid rgba(230, 95, 38, .6);
+    color:var(--black);
+    background-color: #e65f26;
 }
 
 *{
@@ -163,28 +182,46 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 60vh;
+    min-height: 50vh;
+    width: min(90%, 1400px);
+    margin: 1rem auto;
+    background-color: white;
+    border: 3px solid var(--orange);
+    border-radius: 12px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
 }
 
 .story .story-content h2{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
     font-size: 3rem;
+    font-style: normal;
     align-items: center;
     justify-content: center;
-    font-family: 'Tsukushi Mincho', sans-serif;
     display: inline-block;
-    margin-bottom: 1.5rem;
+    margin: 1rem;
+    background-color: white;
 }
 
 .story .story-content p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 1.5rem;
+    background-color: white;
 }
+
 .story .story-content p span{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     color: var(--orange);
 }
 
+.characters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2;
+}
 
 
 
