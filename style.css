@@ -237,13 +237,44 @@ span{
 
 .characters .cards-container .character-card{
     position: relative;
-    background-color: white;
     border: 3px solid var(--orange);
     border-radius: 12px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
     margin: 0 1rem 0 1rem;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+}
+
+.characters .cards-container .character-card .card-content h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: fit-content;
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: .4rem 1rem;
+    background-color: var(--orange);
+    border-radius: 8px;
+}
+
+.characters .cards-container .character-card .card-content p{
+    font-size: 1.2rem;
+    width: fit-content;
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: .4rem 1rem;   
+}
+.characters .cards-container .character-card  a {
+    display: block;
+    width: 100%;
+}
+
+.characters .cards-container .character-card .img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 .footer{
