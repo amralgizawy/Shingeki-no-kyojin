@@ -214,49 +214,37 @@ span{
     letter-spacing: 0.1rem;
     color: var(--orange);
 }
-
 .characters{
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 1.2;
+}
+.characters .heading{
+    font-size: 3rem;
+    width: fit-content; 
+    margin: 1rem auto;  
+    text-align: center;
 }
 
+.characters .cards-container{
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+    margin: 1.2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.characters .cards-container .character-card{
+    position: relative;
+    background-color: white;
+    border: 3px solid var(--orange);
+    border-radius: 12px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
+    margin: 0 1rem 0 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
 
 .footer{
     background: rgb(47, 45, 45);
